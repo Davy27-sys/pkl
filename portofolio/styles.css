@@ -1,0 +1,261 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Roboto',sans-serif;
+    background: url("/portofolio/assets/naga-binus.jpg");
+    background-size:cover;
+    background-attachment:fixed;
+    color:#f5e8c7;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 70px;
+    background:#1b1610dd;
+    backdrop-filter:blur(10px);
+    border-bottom:2px solid #b8860b;
+    z-index:1000;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:#ffd700;
+    letter-spacing:3px;
+    text-shadow:0 0 10px orange;
+}
+
+nav ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+nav a{
+    text-decoration:none;
+    color:#f5e8c7;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ffd700;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:120px 8%;
+}
+
+.hero-text{
+    max-width:550px;
+}
+
+.hero h1{
+    font-size:60px;
+    color:#ffd700;
+    margin-bottom:20px;
+}
+
+.hero p{
+    line-height:1.8;
+}
+
+.hero-image img{
+    width:340px;
+    border-radius:50%;
+    border:5px solid gold;
+    box-shadow:
+    0 0 30px gold,
+    0 0 60px crimson;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 35px;
+    text-decoration:none;
+    background:linear-gradient(45deg,#8b0000,#ff4500);
+    color:white;
+    border-radius:50px;
+    transition:.3s;
+    font-weight:bold;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 25px orange;
+}
+
+section{
+    padding:100px 10%;
+}
+
+section h2{
+    text-align:center;
+    color:#ffd700;
+    font-size:42px;
+    margin-bottom:50px;
+}
+
+.text-card,
+.skill-card,
+.project-card,
+.contact-card{
+    background:#1d1b24;
+    border:2px solid #8b7500;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 0 20px rgba(255,215,0,.25);
+}
+
+
+.skills-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+
+.skill-card{
+    text-align:center;
+    transition:.4s;
+}
+
+.skill-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px gold;
+}
+
+.skill-card i{
+    font-size:70px;
+    color:#ffb000;
+    margin-bottom:15px;
+}
+
+
+.projects-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.project-card{
+    transition:.4s;
+}
+
+.project-link {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+}
+
+.project-card:hover{
+    transform:scale(1.04);
+    box-shadow:0 0 25px crimson;
+}
+
+.project-card h3{
+    color:#ffd700;
+    margin-bottom:15px;
+}
+
+.btn-project{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    text-decoration:none;
+    background:#b22222;
+    color:white;
+    border-radius:30px;
+}
+
+.btn-project:hover{
+    background:#ff4500;
+}
+
+.contact-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.contact-card{
+    text-align:center;
+    transition:.3s;
+}
+
+.contact-card:hover{
+    transform:translateY(-10px);
+}
+
+.contact-card i{
+    font-size:55px;
+    color:#ffd700;
+    margin-bottom:15px;
+}
+
+.contact-card a{
+    color:white;
+    text-decoration:none;
+}
+
+.contact-card a:hover{
+    color:#ffd700;
+}
+
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#120d08;
+    border-top:2px solid gold;
+    color:#ddd;
+}
+
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#b8860b;
+}
+
+::-webkit-scrollbar-track{
+    background:#111;
+}
+
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    gap:15px;
+}
+
+.hero{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:42px;
+}
+
+.hero-image img{
+    width:250px;
+}
+
+}
