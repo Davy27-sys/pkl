@@ -5,12 +5,14 @@
     scroll-behavior:smooth;
 }
 
+   
 body{
     font-family:'Roboto',sans-serif;
-    background: url("/portofolio/assets/naga-binus.jpg");
-    background-size:cover;
-    background-attachment:fixed;
-    color:#f5e8c7;
+    background-image: url("assets/kstaria.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 header{
@@ -153,18 +155,14 @@ section h2{
     gap:30px;
 }
 
-.project-card{
-    background:#1d1b24;
-    border:2px solid #8b7500;
-    border-radius:15px;
-    padding:25px;
-    min-height:220px;
+.project-card a,
+.project-card a:visited {
+    color: white;
+    text-decoration: none;
+}
 
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-
-    transition:.3s;
+.project-card a:hover {
+    color: #ffd700;
 }
 
 .project-link{
